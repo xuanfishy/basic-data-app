@@ -27,8 +27,7 @@ sns.set(style="darkgrid")
 classes = df['Pclass'].sort_values().unique()  # Ensure classes are sorted
 for i, cls in enumerate(classes):
     sns.boxplot(y=df[df['Pclass'] == cls]['Fare'], ax=ax[i])
-    ax[i].set_title(f'Class {cls}')
-    ax[i].set_xlabel('Ticket Class')
+    ax[i].set_xlabel(f'PClass = {cls}')
     ax[i].set_ylabel('Fare')
 
 # Tight layout to handle subplot spacing
