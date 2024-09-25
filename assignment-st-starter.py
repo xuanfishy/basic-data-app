@@ -14,14 +14,12 @@ def load_data():
 df = load_data()
 
 # Display the app header
-st.header('Titanic Survival Analysis')
+st.header('Titanic App by Xinyue Yu')
 
 # Display the first 10 rows of the DataFrame
-st.subheader('First 10 rows of the Titanic Dataset')
 st.write(df.head(10))
 
 # Plotting setup
-st.subheader('Ticket Price Distribution by Passenger Class')
 fig, ax = plt.subplots(nrows=1, ncols=3, figsize=(15, 5))
 sns.set(style="darkgrid")
 
